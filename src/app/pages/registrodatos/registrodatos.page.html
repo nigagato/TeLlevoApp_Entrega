@@ -1,0 +1,40 @@
+<ion-content [fullscreen]="true" class="fondo">
+  <div class="header">
+    <div class="header-text">
+      <span class="txtDorado">TeLlevo</span> <span class="txtBlanco">App</span>
+    </div>
+  </div>
+  <div class="icono">
+    <ion-icon name="chevron-back-outline" (click)="registro()"></ion-icon>
+  </div>
+  
+  <div class="user-container">
+    <div class="titulo">Datos personales</div>
+
+    <div class="txt">Rut</div>
+    <mat-form-field>
+      <mat-label>Digite rut</mat-label>
+      <input matInput>
+    </mat-form-field>
+    <div class="txt">Nombre completo</div>
+    <mat-form-field>
+      <mat-label>Nombre completo...</mat-label>
+      <input matInput>
+    </mat-form-field>
+    <div class="txt">Número de teléfono</div>
+    <mat-form-field>
+      <mat-label>Número telefonico....</mat-label>
+      <input matInput>
+
+    </mat-form-field>
+        <div class="txt">Dirección</div>
+    <mat-form-field>
+      <mat-label>Dirección....</mat-label>
+      <input matInput>
+    </mat-form-field>
+
+    <ion-button fill="clear" expand="block" class="registrar" (click)="registrocompleto()">Registrar</ion-button>
+  </div>
+
+</ion-content>
+

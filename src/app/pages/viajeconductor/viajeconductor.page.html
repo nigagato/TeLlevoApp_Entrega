@@ -1,0 +1,33 @@
+<ion-content [fullscreen]="true" class="fondo">
+  <div class="header">
+    <div class="header-text">
+      <span class="txtDorado">TeLlevo</span> <span class="txtBlanco">App</span>
+    </div>
+  </div>
+  <div class="titulo"><ion-icon name="chevron-back-outline" (click)="conductor()"></ion-icon></div>
+  <div class="icono">
+    <ion-icon name="car-outline" class="icono-grande"></ion-icon>
+    <div class="detalle">
+      <span>Nombre usuario</span>
+      <span>Calificación</span>
+      <span>Indicaciones</span>
+    </div>
+  </div>
+  <br><br>
+  <div class="direccion">
+    <span class="direccion-texto"><ion-icon name="location-outline"></ion-icon>Dirección Inicio...</span>
+  </div>
+  <div class="direccion">
+    <span class="direccion-texto"><ion-icon name="location-outline"></ion-icon>Dirección Final...</span>
+  </div>
+  <br><br>
+  <br>
+  <div class="cancelar" (click)="viajecancelado()">Cancelar viaje</div>
+  <ion-footer>
+    <div class="footer">
+      <ion-icon name="home-outline" (click)="menu()"></ion-icon>
+      <ion-icon name="car-sport-outline" (click)="servicios()"></ion-icon>
+      <ion-icon name="person-circle-outline" (click)="cuenta()"></ion-icon>
+    </div>
+  </ion-footer>
+</ion-content>

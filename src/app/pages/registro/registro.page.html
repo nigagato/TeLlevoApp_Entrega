@@ -1,0 +1,37 @@
+<ion-content [fullscreen]="true" class="fondo">
+  <div class="header">
+    <div class="header-text">
+      <span class="txtDorado">TeLlevo</span> <span class="txtBlanco">App</span>
+    </div>
+  </div>
+  <br>
+  <div class="user-container">
+    <div class="titulo">Registro</div>
+
+    <div class="txt">Usuario</div>
+    <mat-form-field class ="max" hintLabel="Max 10 caracteres">
+      <mat-label>Ingrese usuario</mat-label>
+      <input matInput #input maxlength="10">
+      <mat-hint class="custom-hint" align="end">{{input.value.length}}/10</mat-hint>
+    </mat-form-field>
+    <br>
+    <br>
+    <br>
+    <div class="txt">Contraseña</div>
+    <mat-form-field>
+      <mat-label>Contraseña</mat-label>
+      <input matInput>
+    </mat-form-field>
+    <br>
+    <div class="txt">Repite contraseña</div>
+    <mat-form-field>
+      <mat-label>Contraseña</mat-label>
+      <input matInput>
+    </mat-form-field>
+
+    <ion-button fill="clear" expand="block" class="registrar" (click)="registrodatos()">Registrar</ion-button>
+    <br>
+    <div class="minitxt" (click)="login()">Ya tengo una cuenta</div>
+  </div>
+
+</ion-content>
